@@ -10,10 +10,11 @@ gem 'sqlite3-ruby', '1.3.1', :require => 'sqlite3'
 #gem 'sqlite3-ruby', '1.3.1', :group => :development
 
 # Added to fix an issue running 'heroku rake db:migrate
-#group :production do
-#  #gem 'therubyracer-heroku', '0.8.1.pre3'
-#  gem 'pg'
-#end
+group :production do
+  #gem 'therubyracer-heroku', '0.8.1.pre3'
+  gem 'therubyracer', '~> 0.9.3.beta1'
+  gem 'pg'
+end
 
 
 
